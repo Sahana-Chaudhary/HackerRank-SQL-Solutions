@@ -3,6 +3,6 @@ FROM OCCUPATIONS
 ORDER BY name ASC;
 
 SELECT CONCAT('There are a total of ',COUNT(Occupation),' ',LOWER(occupation),'s.') as line
-FROM OCCUPATIONS
+FROM OCCUPATIONS 
 GROUP BY occupation
-ORDER BY COUNT(Occupation),Occupation;
+ORDER BY COUNT(Occupation),Occupation; 
