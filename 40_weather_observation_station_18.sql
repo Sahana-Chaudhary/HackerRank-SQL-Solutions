@@ -1,0 +1,7 @@
+WITH CTE AS(
+SELECT MIN(LAT_N) AS a, MAX(LAT_N) AS c,
+       MIN(LONG_W) AS b, MAX(LONG_W) AS  d
+FROM STATION)
+
+SELECT ROUND((ABS(a-c)+ABS(b-d)),4) AS Manhatten_Distance
+FROM CTE;
